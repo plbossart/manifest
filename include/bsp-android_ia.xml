@@ -20,7 +20,14 @@
   <project name="device-androidia-mixins" path="device/intel/mixins" remote="github" revision="master" />
   <project name="device-androidia" path="device/intel/android_ia" remote="github" revision="master" />
   <project name="device-androidia-kernel" path="kernel/android_ia" remote="github" revision="master" />
-  <project name="device-androidia-sound" path="vendor/intel/external/android_ia/audio" remote="github" revision="master" />
+  <!-- Audio HAL -->
+    <!-- Small Audio HAL -->
+      <!--project name="device-androidia-sound" path="vendor/intel/external/android_ia/audio" remote="github" revision="master" /-->
+    <!-- CoE Audi HAL-->
+      <project name="hardware_intel_audio" path="vendor/intel/external/android_ia/audio/hal" remote="github" revision="master" />
+      <project name="hardware_intel_audiocomms_utilities" path="vendor/intel/external/android_ia/audio/utilities" remote="github" revision="master" />
+      <project name="vendor_intel_hardware_audiocomms_parameter-framework_plugins_alsa" path="vendor/intel/external/android_ia/audio/plugins/alsa" remote="github" revision="master" />
+  <!-- Audio HAL -->
   <project name="device-intel-common" path="device/intel/common" remote="github" revision="master" />
   <project name="device-intel-build" path="device/intel/build" remote="github" revision="master" />
   <project name="libva" path="vendor/intel/external/android_ia/libva" remote="github" revision="master" />
